@@ -1,0 +1,42 @@
+// NetSnmpDll.idl : NetSnmpDll の IDL ソース
+//
+
+// このファイルは、タイプ ライブラリ (NetSnmpDll.tlb) およびマーシャリング コードを
+// 作成するために MIDL ツールによって処理されます。
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(a817e7a2-43fa-11d0-9e44-00aa00b6770a),
+	dual,	
+	pointer_default(unique)
+]
+interface IComponentRegistrar : IDispatch
+{
+	[id(1)]	HRESULT Attach([in] BSTR bstrPath);
+	[id(2)]	HRESULT RegisterAll();
+	[id(3)]	HRESULT UnregisterAll();
+	[id(4)]	HRESULT GetComponents([out] SAFEARRAY(BSTR)* pbstrCLSIDs, [out] SAFEARRAY(BSTR)* pbstrDescriptions);
+	[id(5)]	HRESULT RegisterComponent([in] BSTR bstrCLSID);
+	[id(6)] HRESULT UnregisterComponent([in] BSTR bstrCLSID);
+};
+
+[
+	uuid(5CA1A0E0-8EEE-4D2E-A51E-549B94505639),
+	version(1.0),
+	custom(a817e7a1-43fa-11d0-9e44-00aa00b6770a,"{229E669B-3612-4055-A656-0BD24FCD7B99}")
+]
+library NetSnmpDllLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(229E669B-3612-4055-A656-0BD24FCD7B99)		
+	]
+	coclass CompReg
+	{
+		[default] interface IComponentRegistrar;
+	};
+};
+

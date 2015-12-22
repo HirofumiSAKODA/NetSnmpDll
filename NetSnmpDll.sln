@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NetSnmpDll", "NetSnmpDll\NetSnmpDll.vcxproj", "{B2DDB943-75F1-44B5-BF3B-BEE8411FCC33}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3AF21FD5-3054-464A-B8B2-7B0836FDBBBC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B2DDB943-75F1-44B5-BF3B-BEE8411FCC33}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B2DDB943-75F1-44B5-BF3B-BEE8411FCC33}.Debug|Win32.Build.0 = Debug|Win32
+		{B2DDB943-75F1-44B5-BF3B-BEE8411FCC33}.Release|Win32.ActiveCfg = Release|Win32
+		{B2DDB943-75F1-44B5-BF3B-BEE8411FCC33}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
