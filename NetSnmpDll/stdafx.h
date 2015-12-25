@@ -39,3 +39,7 @@
 #include <atlbase.h>
 #include <atlcom.h>
 #include <atlctl.h>
+#include <afx.h>
+
+// net-snmp‚Ì include ‚ğ‚±‚±‚É•À‚×‚Ä‚İ‚éB
+#include <net-snmp/net-snmp-config.h>
